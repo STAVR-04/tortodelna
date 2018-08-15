@@ -3,6 +3,8 @@
 .asrt_position_attention {
     font-size: .9em;
     color: #FF5F5F;
+
+    11
 }
 
 .asrt_position_desc {
@@ -112,7 +114,7 @@
     background-size: cover;
     background-position: center;
     margin-right: 2em;
-    
+
     в случае с блоком
 }*/
 
@@ -550,11 +552,11 @@
     .product_info_intro {
         margin-bottom: 3em;
     }
-    
+
     .product_info_desc {
         font-size: 1.2em;
     }
-    
+
     .product_info_control_sum {
         font-size: 1em;
     }
@@ -571,7 +573,7 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
     }
-    
+
     .product_info_control > .btn_two {
 	    margin-right: 1.5em;
     }
