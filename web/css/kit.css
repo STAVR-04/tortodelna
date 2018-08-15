@@ -1,0 +1,575 @@
+/***** Блок настроек *****/
+
+.kit_tuning_wrp {
+    display: flex;
+}
+
+.kit_tuning_action_left {
+    padding-right: 1em;
+}
+
+.kit_tuning_action_right {
+    width: 100%;
+}
+
+.kit_tuning_return {
+
+}
+
+.kit_tuning_return svg {
+    width: 1.2em;
+}
+
+.kit_tuning_return:hover {
+    cursor: pointer;
+    fill: #FF5F5F;
+}
+
+.kit_tuning_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid #D3D3D3 1px;
+    padding-bottom: 2em;
+}
+
+.kit_tuning_reload {
+    display: block;
+    color: #202020;
+;
+}
+
+.kit_tuning_reload svg {
+    fill: #202020;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.kit_tuning_reload span {
+    vertical-align: middle;
+    font-size: .8em;
+}
+
+.kit_tuning_reload:hover svg {
+    fill: #FF5F5F;
+}
+
+.kit_tuning_reload:hover {
+    color: #FF5F5F;
+}
+
+.kit_tuning_subheader {
+    margin: 2em 0 1.5em 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.kit_tuning_subheader span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.kit_tuning_subheader:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #D3D3D3;
+    position: relative;
+    margin-right: -100%;
+    right: -1.5em;
+}
+
+.kit_tuning_action {}
+
+
+.kit_tuning_action_startConfig > .toggle-block {
+    margin-bottom: 2em;
+}
+
+.kit_tuning_action_startConfig > .btn {
+    display: block;
+    margin-top: 2.5em;
+}
+
+
+/** Списки **/
+
+.kit_tuning_action_list {}
+
+.kit_tuning_action_list ul {}
+
+.kit_tuning_action_list ul li {
+    padding: 0.6em 0;
+}
+
+.kit_tuning_action_list .kit_list {
+    color: #202020;
+    font-size: .9em;
+    margin-right: .5em;
+}
+
+.kit_tuning_action_list ul a.kit_list:hover,
+.kit_tuning_action_list ul a.kit_list--active{
+    color: #FF5F5F;
+    border-bottom: solid #FF5F5F 2px;
+}
+
+
+/***** Блок сборки *****/
+
+.kit_action_wrp {
+    height: 100%;
+}
+
+
+
+/** Шкала прогресса **/
+
+/* Ярусная позиция (только при конфиге в 2 яруса) */
+
+.kit_action_process_wrp {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.kit_action_process_tier {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kit_action_process_tier div {
+    flex: 1 0 0;
+    font-size: .8em;
+    color: #FF5F5F;
+    margin-bottom: .7em;
+}
+
+/* Общая обёртка */
+
+.kit_action_process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Обёртка ячейки */
+
+.kit_action_process > .process_position_wrp {
+    flex: 1 0 0;
+    position: relative;
+}
+
+/* Кликабельный блок ячейки с обводкой */
+
+.process_position {
+    border: solid #d3d3d3 1px;
+    padding: .3em 0;
+    cursor: pointer;
+}
+
+/* Стрелка */
+
+.process_arrow {
+    width: 1em;
+    height: .5em;
+    margin: 0 auto;
+    background: url(../web/img/process_arrow.svg) no-repeat;
+    background-size: 1em;
+    background-position: bottom;
+}
+
+/* Активная стрелка */
+
+.process_arrow--active {
+    background-position: top;
+}
+
+/* Активный блок */
+
+.process_position--active {
+    border: solid #FF5F5F 1px;
+}
+
+
+/* Выполненный блок */
+
+.process_position--done {
+    background-color: #FF5F5F;
+}
+
+
+/* Обертка выпадающего списка */
+
+.position_sub {
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.position_sub > ul {
+    padding: .3em .8em;
+}
+
+.position_sub > ul > li > a {
+    font-size: .9em;
+    line-height: 1.8em;
+}
+
+/* Активный пункт списка */
+
+.position_sub_list--active a {
+    color: #FF5F5F;
+}
+
+/* Отображение выпадающего списка */
+
+.position_sub--active {
+    visibility: visible;
+}
+
+
+
+
+/***** Визаулизация сборки *****/
+
+.kit_action_cake {
+    margin-top: 3em;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.level {
+    height: 16em;
+    margin: 0 auto;
+}
+
+/*** 2 ярус на 2 коржа ***/
+
+.two_tier_2type {
+    margin-bottom: -11.8em;
+}
+
+/* Крема */
+
+.two_tier_2type .b2 {
+    margin-bottom: -14.6em;
+}
+
+/* Начинки */
+
+.two_tier_2type .c3 {
+    margin-bottom: -15.3em;
+}
+
+/* Коржи */
+
+.two_tier_2type .d4 {
+    margin-bottom: -14.6em;
+}
+
+
+.two_tier_2type .a1,
+.b2,
+.c3,
+.d4 {
+    position: relative;
+}
+
+.a1 {
+    z-index: 6
+}
+
+.b2 {
+    z-index: 7
+}
+
+.c3 {
+    z-index: 8
+}
+
+.d4 {
+    z-index: 9
+}
+
+
+/*** 2 ярус на 3 коржа ***/
+
+.two_tier {
+    margin-bottom: -12em;
+}
+
+
+/* Коржи */
+
+.two_tier .k,
+.n {
+    margin-bottom: -14.3em;
+}
+
+
+/* Начинки */
+
+.two_tier .j,
+.m {
+    margin-bottom: -15em;
+}
+
+
+/* Крема */
+
+.two_tier .i,
+.l {
+    margin-bottom: -14.5em;
+}
+
+
+.two_tier .h,
+.i,
+.j,
+.k,
+.l,
+.m,
+.n {
+    position: relative;
+}
+
+.n {
+    z-index: 14;
+}
+
+.m {
+    z-index: 13;
+}
+
+.l {
+    z-index: 12;
+}
+
+.k {
+    z-index: 11;
+}
+
+.j {
+    z-index: 10;
+}
+
+.i {
+    z-index: 9;
+}
+
+.h {
+    z-index: 8;
+}
+
+
+
+/*** 1 ярус ***/
+
+
+/* Крема */
+
+.one_tier {
+    position: relative;
+}
+
+.one_tier .b,
+.e {
+    margin-bottom: -14.2em;
+}
+
+/* Начинки */
+
+.one_tier .c,
+.f {
+    margin-bottom: -15.1em;
+}
+
+/* Коржи */
+
+.one_tier .d,
+.g {
+    margin-bottom: -14.6em;
+}
+
+
+.one_tier .b,
+.c,
+.d,
+.e,
+.f,
+.g {
+    position: relative;
+}
+
+.g {
+    z-index: 7;
+}
+
+.f {
+    z-index: 6;
+}
+
+.e {
+    z-index: 5;
+}
+
+.d {
+    z-index: 4;
+}
+
+.c {
+    z-index: 3;
+}
+
+.b {
+    z-index: 2;
+}
+
+
+/** Слой мастики **/
+
+
+.mastica {
+    height: 101%;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/** Дэкор **/
+
+.decor_full-config {/** Для 2-3 **/
+    z-index: 300;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.decor {
+    margin-bottom: -1em;
+    z-index: 300;
+}
+
+
+
+/***** Медиазапросы для блока сборки *****/
+
+@media screen and (max-width: 1400px) {
+    .level {
+        width: 24.8em;
+        height: 15.35em;
+        border: solid purple 2px;
+    }
+
+    .mastica {
+        width: 24.8em;
+    }
+}
+
+
+
+
+/***** Блок чека *****/
+
+.kit_total_wrp {}
+
+.kit_total_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #D3D3D3 1px;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.kit_total_body {
+    border-bottom: solid #D3D3D3 1px;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.kit_total_body_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    font-size: .9em;
+
+}
+
+.kit_total_body_row {
+    color: #202020;
+}
+
+.kit_total_body_row:hover {
+    color: #FF5F5F;
+}
+
+
+.kit_dropdown {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.kit_dropdown .dropdown {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+.kit_dropdown.active .dropdown {
+    padding-left: .6em;
+    max-height: 400px;
+}
+
+.kit_dropdown .dropdown .kit_list {        -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #929292;
+}
+
+.kit_dropdown .dropdown .kit_list:hover{
+    border-bottom: none;
+    margin-left: .3em;
+}
+
+.kit_color-wrp {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.kit_color {
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 100%;
+    background-color: red;
+    margin-right: 1em;
+    display: block;
+}

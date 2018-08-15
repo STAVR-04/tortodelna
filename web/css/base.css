@@ -1,0 +1,1061 @@
+@font-face {
+    font-family: 'MontserratExtraBold';
+    src: url('../web/fonts/subset-Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../web/fonts/subset-Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../web/fonts/subset-Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../web/fonts/subset-Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html {}
+
+body {
+    font-size: 16px;
+    color: #202020;
+    overflow-x: hidden;
+    font-family: 'MontserratRegular';
+}
+
+.chr-bg {
+    background: url(../web/img/singin_bg.jpg) no-repeat right;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+input,
+select {
+    font-size: .9em;
+    box-sizing: border-box;
+    outline: none;
+}
+
+select {
+    background-color: #efefef;
+    border: none;
+    padding: .2em .5em;
+}
+
+input {
+    border: solid #d1d1d1 1px;
+    padding: .5em .7em;
+    width: 100%;
+    font-family: 'MontserratRegular';
+}
+
+.white-select {
+    background-color: #FFF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #202020;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-top: 6em;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.col-no-padding {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+
+/********** Типографика **********/
+
+.color-white {
+    color: #FFF;
+}
+
+.color-purple {
+    color: #451F63;
+}
+
+.color-yellow {
+    color: #FFE766;
+}
+
+.color-caral {
+    color: #FF5F5F;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'MontserratExtraBold';
+    font-size: 2em;
+    line-height: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'MontserratExtraBold';
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'MontserratExtraBold';
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'MontserratBold';
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-family: 'MontserratBold';
+    font-size: .9em;
+    padding: 0;
+    margin: 0;
+}
+
+
+/** Внешнее поведение заголовков **/
+
+.header-external-h3-v2 {
+    margin-bottom: .7em;
+}
+
+
+/** Текстовые блоки **/
+
+.p-text.v1 {
+    font-size: .9em;
+    line-height: 2.4em;
+}
+
+.p-text a {
+    color: #202020;
+    transition: all 150ms ease-out;    
+}
+
+.p-text a:hover {
+    color: #FF5F5F;    
+}
+
+
+/********** Блоки контента (отступы) **********/
+
+.mrg-bottom-v1 {
+    margin-bottom: 2.3em;
+}
+
+/********** Кнопки **********/
+
+.btn {
+    /* Базовый класс для кнопок с общими характеристиками */
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    transition-property: box-shadow, background-color, color;
+    transition: all 150ms ease-out;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка 1-го класса (главная, конструктор)*/
+
+.btn_one {
+    display: block;
+    font-family: 'MontserratExtraBold';
+    font-size: 1.25em;
+    padding: 0.7em 2em;
+    background-color: #451F63;
+    color: #FFF;
+    -webkit-box-shadow: 0em .2em 1em 0em rgba(103, 23, 122, 0.61);
+    -moz-box-shadow: 0em .2em 1em 0em rgba(103, 23, 122, 0.61);
+    box-shadow: 0em .2em 1em 0em rgba(103, 23, 122, 0.61);
+}
+
+.btn_one:hover {
+    background-color: #FF5F5F;
+    -webkit-box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.72);
+    -moz-box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.72);
+    box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.72);
+    transition-property: box-shadow, background-color, color;
+}
+
+.btn_one:active {
+    background-color: #DB5252;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: all 150ms ease-out;
+}
+
+/* Не активная кнопка 1-го класса (конструктор)*/
+
+.btn_one--noactive {
+    background-color: #F2F2F2;
+    color: #D3D3D3;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btn_one--noactive:hover {
+    background-color: #F2F2F2;
+    box-shadow: none;
+    color: #D3D3D3;
+}
+
+/* Кнопка 2-го класса (ассортимент)*/
+
+.btn_two {
+    font-family: 'MontserratBold';
+    font-size: 1em;
+    background-color: #ffe1e1;
+    color: #FF5F5F;
+    padding: 0.7em 1em;
+    -webkit-box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.27);
+    -moz-box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.27);
+    box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.27);
+}
+
+.btn_two:hover {
+    background-color: #FF5F5F;
+    color: #FFF;
+    -webkit-box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.5);
+    -moz-box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.5);
+    box-shadow: 0em .2em 1em 0em rgba(255, 95, 95, 0.5);
+    transition-property: box-shadow, background-color, color;
+}
+
+.btn_two:active {
+    background-color: #DB5252;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: all 150ms ease-out;
+}
+
+/* Кнопка 3-го класса (конструктор) */
+
+.btn_three {
+    font-family: 'MontserratRegular';
+    font-size: .8em;
+    color: #FFF;
+    padding: .3em 1.2em .2em 0.7em;
+    position: absolute;
+    z-index: 1;
+}
+
+.btn_three > svg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn_three:hover {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+}
+
+.btn_three:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.btn_three_layerbg {
+    fill: #FF5F5F;
+}
+
+.btn_three:active .btn_three_layerbg {
+    fill: #DB5252;
+}
+
+
+/***  Переключатели  (конструктор) ***/
+
+.toggle-name {
+    margin-bottom: .8em;
+    font-size: .9em;
+}
+
+.toggle-group {
+    border: 1px solid #D3D3D3;
+    display: inline-block;
+}
+
+.toggle-group > label {
+    display: inline-block;
+    color: #919191;
+    font-size: .8em;
+    height: 2em;
+    line-height: 2.2em;
+    padding: 0 .9em;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.toggle-group > label > input {
+    margin: 0;
+    flex: 0 0 2em;
+    order: 2;
+    font-size: inherit;
+    visibility: hidden;
+}
+
+.toggle-group > label > input:checked {
+    order: 3;
+}
+
+.toggle-group > label:after {
+    content: "";
+    flex: 0 0 2.2em;
+    margin: -2.2em -.9em 0;
+    background-color: #FF5F5F;
+    color: #FFF;
+    order: 2;
+    z-index: -1;
+}
+
+.toggle-group > label > input:checked + span {
+    color: #FFF;
+}
+
+
+/***  Стрелки назад, вперед ***/
+
+.change-arrow a {
+    color: #202020;
+}
+
+
+.change-arrow a svg {
+    height: 1.2em;
+    fill: #202020;
+    vertical-align: middle;
+}
+
+.next_change:hover span,
+.next_change:hover svg,
+.back_change:hover span,
+.back_change:hover svg {
+    color: #FF5F5F;
+    fill: #FF5F5F;
+}
+
+/* Откат страниц */
+
+.back-page {
+    margin-bottom: 3em;
+}
+
+/******* Шапка (меню, корзина, лого) *******/
+
+.header_wrp {
+    position: fixed;
+    width: 100%;
+    z-index: 9960;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.3em;
+}
+
+/* Левая секция (кнопка вызова меню) */
+
+.menu_link {
+    position: relative;
+    display: block;
+    width: 2em;
+    height: 1.3em;
+    text-decoration: none;
+}
+
+.menu_link span {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 0.2em;
+    background-color: #D3D3D3;
+    transition: all 150ms ease-out;
+}
+
+.menu_link:before {
+    content: 'Меню';
+    padding-left: 3em;
+    font-family: 'MontserratExtraBold';
+    color: #D3D3D3;
+}
+
+
+/* Прячем before при нажатии на кнопку */
+
+.menu_link--nonContent:before {
+    content: none;
+}
+
+.menu_link span:nth-child(3) {
+    margin-top: 0.5em;
+    width: 1.5em;
+}
+
+.menu_link span:nth-child(1) {
+    margin-top: -0.5em;
+}
+
+
+/* Активная кнопка вызова меню 'X' */
+
+.menu_link--active span:nth-child(2) {
+    height: 0;
+}
+
+.menu_link--active span:nth-child(3) {
+    transform: rotate(135deg);
+    margin: 0;
+    width: inherit;
+    background-color: #FF5F5F;
+}
+
+
+.menu_link--active span:nth-child(1) {
+    transform: rotate(-135deg);
+    margin: 0;
+    background-color: #FF5F5F;
+}
+
+
+/*** Правая секция (лого, корзина) ***/
+
+.header_sec-right_wrp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header_sec-right {
+    display: flex;
+
+}
+
+.logo {
+    height: 5.6em;
+    width: 2.1em;
+    background: url(../web/img/sprite.svg) no-repeat;
+    background-size: 7.9em;
+    background-position: -5.7em 0;
+    transition: all 150ms ease-out;
+}
+
+.trash {
+    margin-top: .6em;
+    margin-right: 3.3em;
+    width: 1.4em;
+    height: 1.3em;
+    background: url(../web/img/sprite.svg);
+    background-size: 7.7em;
+    background-position: -4em -1.4em;
+}
+
+.trash span {
+    background-color: #FF5F5F;
+    font-family: 'MontserratBold';
+    border-radius: 100%;
+    font-size: 0.7em;
+    width: 1.3em;
+    padding: 0.1em;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    margin: -.7em 0 0 1.1em;
+}
+
+.logo.scroll {
+    background-position: -5.7em -5.7em;
+    height: 2em;
+}
+.header_wrp.scroll {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+/*** Меню ***/
+
+.menu {
+    background-color: #FFF;
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    z-index: 9960;
+    left: -30vw;
+    transition: all 250ms ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'MontserratExtraBold';
+    font-size: 1.1em;
+}
+
+.menu ul li a {
+    display: block;
+    color: #202020;
+    margin: .5em 0;
+    align-self: center;
+    padding: .2em 0;
+}
+
+.menu_section {
+    margin: 2em 0;
+}
+
+.menu_section:last-child {
+    margin: 0;
+}
+
+.menu_bodyBlur--active {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 150ms ease-out;
+    z-index: 9950;
+}
+
+
+@media screen and (max-width: 767px) {
+    .header_wrp {
+        height: 10vh;
+    }
+    .menu {
+        width: 85vw;
+        left: -85vw;
+    }
+}
+
+/* Активное тело меню */
+
+.menu--active {
+    left: 0;
+}
+
+/********** Главный экран **********/
+
+.intro_block-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../web/img/mp_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    padding: 0 3.1em;
+}
+
+.intro_block-one_header h1 {
+    font-family: 'MontserratExtraBold';
+    font-size: 2.9em;
+    margin-bottom: 0.8em;
+}
+
+.intro_block-one .btn_one {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+
+    .intro_block-one {
+        justify-content: center;
+    }
+
+    .intro_block-one_header h1 {
+        font-size: 2.3em;
+    }
+}
+
+.intro_block-two,
+.intro_block-three {
+    background-repeat: no-repeat;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3.1em;
+    height: 30vh;
+    transition: all 150ms ease-out;
+}
+
+.intro_block-two {
+    background: url(../web/img/mp_assortiment_bg.jpg);
+}
+
+.intro_block-three {
+    background: url(../web/img/mp_sale_bg.jpg);
+}
+
+.intro_block-two:active,
+.intro_block-three:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.intro_block-two div {
+    background: url(../web/img/sprite.svg);
+    background-size: 5.8em 7.4em;
+    background-position: 0 -5.6em;
+    width: 5.6em;
+    height: 0.8em;
+    margin-top: 1.4em;
+    transition: all 150ms ease-out;
+}
+
+.intro_block-three div {
+    background: url(../web/img/sprite.svg);
+    background-size: 5.8em 7.4em;
+    background-position: 0 -6.5em;
+    width: 5.6em;
+    height: 0.8em;
+    margin-top: 1.4em;
+    transition: all 150ms ease-out;
+}
+
+.intro_block-two:hover div {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    transition: all 150ms ease-out;
+}
+
+.intro_block-three:hover div {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    transition: all 150ms ease-out;
+}
+
+/********** Футтер **********/
+
+footer {
+    font-size: .8em;
+    padding: 2em 0;
+    font-family: 'MontserratRegular';
+    margin-top: 3.5em;
+
+}
+
+/* Меню */
+
+.footer_menu ul {
+    display: inline-block;
+    margin: 0 3em 2em 0;
+    padding: 0;
+}
+
+.footer_menu ul li {
+    list-style: none;
+    margin: 0 0 1.2em 0;
+    padding: 0;
+}
+
+.footer_menu ul li a {
+    text-decoration: none;
+    transition-duration: .2s;
+    color: #202020;
+}
+
+.footer_menu ul li a:hover {
+    color: #DB5252;
+    transition-duration: .2s;
+}
+
+/* Информация справа */
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer_contacts span {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.footer_contacts span:last-child {
+    margin-bottom: 0;
+}
+
+.footer_contacts-tel {
+    font-family: 'MontserratMedium';
+    font-size: 1.4em;
+}
+
+.footer_pay {
+    align-items: flex-end;
+}
+
+.footer_pay img {
+    width: 200px;
+}
+
+/* Сслыки на соц.медиа */
+
+.footer_link {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer_link a {
+    align-content: space-around;
+    display: block;
+
+}
+
+.footer_link a svg {
+    fill: #D3D3D3;
+    height: 1.6em;
+}
+
+.footer_link .vk svg:hover {
+    fill: #4a76a8;
+}
+
+.footer_link .inst svg:hover {
+    fill: #d53692;
+}
+
+.footer_link .hld svg:hover .svg_link-liq {
+    fill: #F53B59;
+}
+
+/* MQ для футера */
+
+@media screen and (max-width: 767px) {
+    .footer_link {
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-bottom: 3em;
+    }
+
+    .footer_link a svg {
+        height: 1.7em;
+    }
+
+    .footer_link a {
+        margin-right: .5em;
+    }
+
+    .footer_info {
+        align-items: flex-start;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .footer_info .footer_contacts {
+        margin-bottom: 1em;
+    }
+
+    .footer_copirates {
+        margin-bottom: 3em;
+    }
+}
+
+
+/***** Тултипы *****/
+
+.tooltips {
+    position: relative;
+    display: inline;
+}
+
+.tooltips span {
+    position: absolute;
+    padding: .3em .7em;
+    color: #202020;
+    background: #FFFFFF;
+    visibility: hidden;
+    border-radius: .3em;
+    border: solid #FF5F5F 2px;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 2%;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-right: .5em solid #FF5F5F;
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+}
+
+
+:hover.tooltips span {
+    visibility: visible;
+    left: 100%;
+    top: 50%;
+    margin-top: -.9em;
+    margin-left: .9em;
+    z-index: 999;
+}
+
+
+
+
+
+/***** Табы *****/
+
+.tabs__controls {
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.tabs__controls > li {
+    margin-right: 2em;
+}
+
+.tabs__controls > li:last-child {
+    margin-right: 0;
+}
+
+.tabs__controls > li > a {
+    font-family: 'MontserratBold';
+    font-size: 1.1em;
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item--active {
+    display: block;
+}
+
+
+.tabs__controls-link {
+    color: #d1d1d1;
+}
+
+.tabs__controls-link--active a {
+    color: #202020;
+}
+
+
+/***** Формы *****/
+
+.input_description {
+    font-family: 'MontserratBold';
+    font-size: .9em;
+}
+
+.form-control {
+    display: block;
+    width: 75%;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    padding: .9em 1em .9em 1em;
+    border: solid #777777 1px;
+    outline: none;
+}
+
+.form-control:focus {
+    border: solid #FF5F5F 1px;
+}
+
+.def_form__footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.def_form__footer>.btn_two {
+    margin-right: 2em;
+}
+
+.forgot-pass {
+    font-size: .8em;
+}
+
+.forgot-pass:hover {
+    text-decoration: underline;
+}
+
+/***** Модальное окно *****/
+
+.modal_zone {
+    /*** Обертка всей стркутуры (скрытая) ***/
+    background: rgba(69, 31, 99, .2);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.madal_zone__active {
+    display: block;
+}
+
+.modal_body {
+    /*** Тело окна **/
+    background-color: #FFF;
+}
+
+.modal_body__header {
+    /*** Блок с кнопкой закрытия ***/
+    text-align: right;
+    padding: 1em 1em 0 0;
+}
+
+.modal_body__header .header__close svg {
+    fill: #202020;
+    width: .8em;
+}
+
+.modal_body__header .header__close svg:hover {
+    fill: #FF5F5F;
+}
+
+.modal_body__content {
+    /*** Обертка контента ***/
+    padding: 2em 5em 3em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal_body__intro {
+    /*** Заголовок ***/
+    margin-bottom: 3em;
+}
+
+.modal_body__btn {
+    /*** обертка кастомных кнопок ***/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.btn_modal {
+    /*** Ксатом кнопок под модальное окно ***/
+    padding: .7em 1.5em;
+    font-family: 'MontserratBold';
+    font-size: 1em;
+    margin-right: 2em;
+}
+
+.btn_modal:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 772px) {
+    .modal_body__content {
+        padding: 1em 2em 2em 2em;
+    }
+
+    .btn_modal {
+        margin-bottom: 1.2em
+    }
+
+    .btn_modal:last-child {
+        margin-bottom: 0;
+    }
+
+    .modal_body__header {
+        text-align: right;
+        padding: 1em 1em .6em 0;
+    }
+
+    .modal_body__header .header__close svg {
+        width: 1.2em;
+    }
+}

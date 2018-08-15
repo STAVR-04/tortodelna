@@ -1,0 +1,50 @@
+.lk_header {
+    margin-bottom: 2em;
+}
+
+.user_info__user-desc {
+    font-size: .9em;
+}
+
+.user_info__user-desc table {
+    width: 100%;
+}
+
+.user_info__user-desc,
+.buy_history__table table tr {
+    line-height: 2.5em;
+}
+
+
+.buy_history__table table td,
+th {
+    border: solid 1px #777777;
+    width: 100%;
+    padding: .3em .8em;
+    font-size: .9em;
+}
+
+.buy_history__table table th {
+    text-align: left;
+    font-weight: normal;
+    background-color: #f4f4f4;
+    font-family: 'MontserratMedium';
+}
+
+
+.reg-done__header, .forgot-pas__header {
+    margin-bottom: 1.5em;
+}
+
+.reg-done__desc, .forgot-pas__desc{
+    font-size: .9em;
+    line-height: 1.7em;
+    margin-bottom: 2.2em;
+}
+
+
+@media screen and (max-width: 992px) {
+    .user_info_wrp {
+        margin-bottom: 2.5em;
+    }
+}

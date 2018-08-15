@@ -1,0 +1,157 @@
+/***** Список товаров слева *****/
+
+.products_wrp__header {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.products_wrp__header h3 {
+    margin-right: 3em;
+}
+
+.products_wrp__header svg {
+    height: .6em;
+    fill: #202020;
+    margin-right: .2em;
+}
+
+.products_wrp__header span {
+    font-size: .8em;
+    color: #202020;
+}
+
+.products_wrp__header:hover span,
+.products_wrp__header:hover svg {
+    color: #ff5f5f;
+    fill: #ff5f5f;
+}
+
+.products_wrp__prod-list {
+    padding: 1.1em 1.8em 1.8em 1.8em;
+    background-color: #f7f7f7;
+    margin-bottom: 2em;
+}
+
+.position__header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__close svg {
+    fill: #202020;
+    height: .9em;
+}
+
+.header__close:hover svg {
+    fill: #ff5f5f;
+}
+
+.prod-list__position {
+    display: flex;
+}
+
+
+.position__image {
+    width: 25%;
+    height: 9em;
+}
+
+.position__info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info__control-sum {
+    font-size: .9em;
+}
+
+
+.position__price {
+    width: 15%;
+}
+
+.position__price span {
+    font-family: 'MontserratBold';
+    font-size: 1.1em;
+}
+
+.position__info,
+.position__price {
+    padding: .8em 0 .8em 1.2em;
+}
+
+/***** Итоговая сумма справа *****/
+
+.total_wrp__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+
+.total_wrp__done-block {
+    background-color: #f7f7f7;
+    padding: 2em;
+}
+
+.done-block-wrp > div {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.done-block-wrp > div:last-child {
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+.done-block__quantity {
+    padding-bottom: 1.5em;
+    font-family: 'MontserratBold';
+}
+
+.done-block__delivery {
+    border-top: solid #d1d1d1 1px;
+    border-bottom: solid #d1d1d1 1px;
+}
+
+.delivery__ship-price,
+.done-block__total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery__ship-price span:last-child {
+    font-family: 'MontserratBold';
+}
+
+
+.done-block__delivery > .delivery__header,
+.done-block__recipient > .recipient__header {
+    margin-bottom: 1.8em;
+    font-family: 'MontserratExtraBold';
+}
+
+
+.done-block__delivery div,
+.done-block__recipient div {
+    margin-bottom: 1.2em;
+}
+
+.done-block__delivery div:last-child,
+.done-block__recipient div:last-child {
+    margin-bottom: 0;
+}
+
+.done-block__total {
+    border-top: solid #d1d1d1 1px;
+    font-family: 'MontserratBold';
+}
+
+
+@media screen and (max-width: 767px) {
+    .products_wrp {
+        margin-bottom: 2.5em;
+    }
+}

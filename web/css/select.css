@@ -1,0 +1,92 @@
+.select {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 325px;
+    vertical-align: middle;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    border: solid #d1d1d1 1px;
+    font-size: .9em;
+    box-sizing: border-box;
+    font-family: 'MontserratRegular';
+}
+
+.select .placeholder {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    z-index: 1;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.select .placeholder:hover {
+    background: #f7f7f7;
+}
+
+.select .placeholder:after {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+    content: ' ';
+    background-image: url('../img/select/down-chevron.svg');
+    background-repeat: no-repeat;
+    background-size: .8em;
+    height: .8em;
+    width: .8em;
+}
+
+.select.is-open .placeholder:after {
+    background-image: url('../img/select/up-chevron.svg');
+}
+
+.select.is-open ul {
+    display: block;
+}
+
+.select.select--two .placeholder {
+    background: #fff;
+    color: #999;
+}
+
+.select.select--two .placeholder:hover {
+    background: #fafafa;
+}
+
+.select ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100;
+    max-height: 200px;
+}
+
+.select ul li {
+    display: block;
+    text-align: left;
+    padding: 0.5em 1em 0.5em 1em;
+    color: #999;
+    cursor: pointer;
+}
+
+.select ul li:hover {
+    background: #ebebeb;
+    color: #202020;
+}
